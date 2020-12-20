@@ -3,6 +3,8 @@ const express = require('express');
 const hbs =  require('hbs');
 const app = express() ; 
 
+const port = process.env.PORT  || 3000;
+
 const geocode = require('./utilities/geocode');
 const getForecast = require('./utilities/forecast');
 // base url : app.com
@@ -95,6 +97,6 @@ app.get('*',(req,res)=>{
 })
 
 //setting up port number and tell our server to listen
-app.listen(3000,()=>{
-    console.log('listening on port number 3000');
+app.listen(port,()=>{
+    console.log(`listening on port number ${port}`);
 })
