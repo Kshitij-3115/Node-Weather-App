@@ -4,10 +4,10 @@
   "description": "creating server for weather application",
   "main": "app.js",
   "scripts": {
-    "test": "app"
+    "start":"node src/app.js"
   },
   "keywords": [
-    "weather"
+    "weather","weather-data","kshitij weather app", "NITP Kshitij Weather app"
   ],
   "author": "Kshitij Khot",
   "license": "ISC",
